@@ -3,7 +3,7 @@ from scipy.io.wavfile import read
 from scipy.signal import decimate
 
 
-def fft_process(file_name, factor=10):
+def fft_process(file_name, factor=1):
 
     # Leer el archivo de audio 
     Fs, audio = read(file_name)
