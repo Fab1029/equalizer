@@ -8,7 +8,7 @@ import Equalizer as eq
 def ecualizador(song):
 
     try:
-        FFT, freqs, Fs = fft_process(song, 2)
+        FFT, freqs, Fs = fft_process(song, int(input("<>Ingrese factor de decimacion\n")))
     except:
         print('No se pudo leer el audio')
         return
